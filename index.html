@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Isabelle Zhan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="cursor-dot" id="cursorDot"></div>
+
+<nav class="site-nav">
+  <a href="#top" class="wordmark">isabelle zhan</a>
+  <div class="nav-links">
+    <a href="#work">work</a>
+    <a href="#about">about</a>
+    <!-- <a href="resume.pdf" target="_blank">resume</a> -->
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-row">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">hi, i'm</p>
+      <h1 class="hero-name">Isabelle Zhan</h1>
+      <p class="hero-tagline">a computer science student who thinks in systems and sees in color.</p>
+      <p class="hero-sub">Second-year CS at UBC. Analytical by training, visual by instinct &mdash; I like building the kind of software that has an actual point of view.</p>
+      <div class="hero-stars" aria-hidden="true">
+        <svg class="hero-star star-1" viewBox="0 0 22 22" fill="none"><path d="M11 0C11 6 16 11 22 11C16 11 11 16 11 22C11 16 6 11 0 11C6 11 11 6 11 0Z" fill="currentColor"/></svg>
+        <svg class="hero-star star-2" viewBox="0 0 22 22" fill="none"><path d="M11 0C11 6 16 11 22 11C16 11 11 16 11 22C11 16 6 11 0 11C6 11 11 6 11 0Z" fill="currentColor"/></svg>
+      </div>
+    </div>
+    <div class="hero-photo-wrap">
+      <img class="hero-photo" src="media/Subject4.PNG" alt="Isabelle Zhan">
+    </div>
+  </div>
+  <div class="scroll-cue">
+    <span>scroll</span>
+    <svg width="14" height="20" viewBox="0 0 14 20" fill="none"><path d="M7 1V19M7 19L1 13M7 19L13 13" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </div>
+</header>
+
+<div class="sparkle-divider" aria-hidden="true">
+  <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M11 0C11 6 16 11 22 11C16 11 11 16 11 22C11 16 6 11 0 11C6 11 11 6 11 0Z" fill="currentColor"/></svg>
+</div>
+
+<main id="work">
+
+  <section class="project reveal" id="nebula">
+    <div class="project-media">
+      <div class="placeholder-frame">
+        <span class="placeholder-label">
+            <img src = "media/nebula.png" alt = "nebula-project">
+        </span>
+      </div>
+    </div>
+    <div class="project-copy">
+      <p class="project-hook">study time, turned into a tiny universe.</p>
+      <h2 class="project-title">Nebula</h2>
+      <p class="project-desc">Nebula is a gamified focus app that turns hours of studying into evolving pixel-art planets. Every subject gets its own star, and as focus sessions add up, that subject's planet grows through visual stages until it settles into a permanent star system. Full stack, with live focus tracking, session history, and weekly insight dashboards.</p>
+      <ul class="project-tags">
+        <li>Java</li><li>Spring Boot</li><li>PostgreSQL</li><li>React</li><li>Three.js</li>
+      </ul>
+      <a class="project-link" href="https://github.com/isabelleezhan/nebula">View project</a>
+    </div>
+  </section>
+
+  <section class="project reveal reverse" id="vibesplit">
+    <div class="project-media">
+      <div class="placeholder-frame">
+        <span class="placeholder-label">
+            <img src = "media/vibesplit.png" alt = "vibesplit-project">
+        </span>
+      </div>
+    </div>
+    <div class="project-copy">
+      <p class="project-hook">your playlist, sorted by vibe, not chronology.</p>
+      <h2 class="project-title">VibeSplit <span class="status-tag">in progress</span></h2>
+      <p class="project-desc">VibeSplit connects to Spotify, takes one big sprawling playlist, and splits it into smaller playlists that actually feel coherent, using clustering plus an LLM to name each group. I designed the full frontend flow myself, from login through clustering to an interactive preview where you can drag tracks between clusters by hand.</p>
+      <ul class="project-tags">
+        <li>React</li><li>TypeScript</li><li>FastAPI</li><li>PostgreSQL</li><li>Spotify API</li>
+      </ul>
+      <a class="project-link" href="https://github.com/isabelleezhan/vibesplit">View project</a>
+    </div>
+  </section>
+
+  <div class="sparkle-divider" aria-hidden="true">
+    <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M11 0C11 6 16 11 22 11C16 11 11 16 11 22C11 16 6 11 0 11C6 11 11 6 11 0Z" fill="currentColor"/></svg>
+  </div>
+
+  <section class="project reveal" id="hnsw">
+    <div class="project-media">
+      <div class="placeholder-frame">
+        <span class="placeholder-label">
+          <img src="media/hnsw.svg" alt="Diagram of HNSW's layered graph structure, from a dense bottom layer up to a single entry point">
+        </span>
+      </div>
+    </div>
+    <div class="project-copy">
+      <p class="project-hook">a nearest-neighbor search, built from scratch.</p>
+      <h2 class="project-title">HNSW ANN Index</h2>
+      <p class="project-desc">A graph-based approximate nearest-neighbor index written from the ground up in C++, hitting 94.3% recall at 100,000-vector scale against a brute-force baseline. It's exposed to Python through pybind11 and powers a movie recommendation engine across more than 9,000 titles.</p>
+      <ul class="project-tags">
+        <li>C++17</li><li>Python</li><li>pybind11</li>
+      </ul>
+      <a class="project-link" href="https://github.com/isabelleezhan/HNSW">View project</a>
+    </div>
+  </section>
+
+  <section class="project reveal reverse" id="medialibrary">
+    <div class="project-media">
+      <div class="placeholder-frame">
+        <span class="placeholder-label">
+            <img src = "media/medialib.png" alt = "medialibrary-project">
+        </span>
+      </div>
+    </div>
+    <div class="project-copy">
+      <p class="project-hook">one place for every book, show, and movie I forget I started.</p>
+      <h2 class="project-title">MediaLibrary</h2>
+      <p class="project-desc">A desktop app for tracking books, movies, and TV shows in one library instead of a messy notes app. It handles status tracking, ratings and reviews, and simple stats on what you actually finish. Built with a 25-class UML architecture and full JUnit test coverage.</p>
+      <ul class="project-tags">
+        <li>Java</li><li>Swing</li><li>JUnit</li>
+      </ul>
+      <a class="project-link" href="https://github.com/isabelleezhan/medialibrary">View project</a>
+    </div>
+  </section>
+
+</main>
+
+<div class="sparkle-divider" aria-hidden="true">
+  <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M11 0C11 6 16 11 22 11C16 11 11 16 11 22C11 16 6 11 0 11C6 11 11 6 11 0Z" fill="currentColor"/></svg>
+</div>
+
+<section class="about reveal" id="about">
+  <div class="about-media">
+    <div class="placeholder-frame small">
+      <span class="placeholder-label">
+        <img src="media/yuan-me.JPG" alt="Isabelle Zhan">
+      </span>
+    </div>
+  </div>
+  <div class="about-copy">
+    <h2 class="about-title">a bit more</h2>
+    <p>I'm a second-year computer science student at UBC, and most of what I build starts as an excuse to tinker with something I'm already into. Nebula turns studying into something closer to a game because that's what actually gets me to focus. VibeSplit happened because my playlists became needlessly overgrown. HNSW's recommendation engine and MediaLibrary both stem from the avid cinephile in me.</p>
+    <p>I grew up in Vancouver, and in my free time, I'm often learning new dances (often those KPop ones) or chasing what's new: new songs before anyone else has heard them, whatever just opened at the theater, especially sci-fi. I draw sometimes too, usually when I'm supposed to be doing something else.</p>
+  </div>
+</section>
+
+<footer class="site-footer" id="contact">
+  <p class="footer-line">say hi</p>
+  <div class="footer-links">
+    <a href="mailto:isabellehzhan@gmail.com">Email</a>
+    <a href="https://linkedin.com/in/isabelle-z-aa91a83a6" target="_blank">LinkedIn</a>
+    <a href="https://github.com/isabelleezhan" target="_blank">GitHub</a>
+    <!-- <a href="resume.pdf" target="_blank">Resume</a> -->
+  </div>
+  <!-- <p class="footer-note">built with care, 2026</p> -->
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
