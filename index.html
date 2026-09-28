@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Isabelle Zhan</title>
+<meta name="description" content="Isabelle Zhan, second-year Computer Science student at UBC. Projects, music, and a bit about me.">
+<meta name="theme-color" content="#121212">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%231ed760'/%3E%3Cpath d='M12 9.5v13l10.5-6.5z' fill='%23000'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Sidebar (desktop only) -->
+  <aside class="sidebar">
+    <nav class="panel side-nav">
+      <a href="#top" class="side-link active" title="Home" aria-label="Home">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2.5 11h2.5v9h5.5v-6h3v6H19v-9h2.5z" fill="currentColor"/></svg>
+        <span>Home</span>
+      </a>
+      <a href="#about" class="side-link" title="About" aria-label="About">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        <span>About</span>
+      </a>
+      <a href="#contact" class="side-link" title="Say hi" aria-label="Say hi">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.3-8.7-8.6C2.1 8.2 4.1 5 7.2 5c1.9 0 3.4 1 4.8 2.8C13.4 6 14.9 5 16.8 5c3.1 0 5.1 3.2 3.9 6.4C19 15.7 12 20 12 20z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        <span>Say hi</span>
+      </a>
+    </nav>
+
+  </aside>
+
+  <!-- Main view -->
+  <main class="panel main" id="main">
+
+    <header class="artist-header" id="top">
+      <img class="artist-banner" src="media/swan-banner.jpg" alt="A swan on misty purple water">
+      <div class="artist-header-inner">
+        <h1 class="artist-name">Isabelle Zhan</h1>
+        <p class="verified">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5l2.6 1.9 3.2-.2 1 3 2.7 1.8-1 3 1 3-2.7 1.8-1 3-3.2-.2L12 22.5l-2.6-1.9-3.2.2-1-3L2.5 16l1-3-1-3 2.7-1.8 1-3 3.2.2z" fill="#4CB3FF"/><path d="M7.5 12.2l3 3 6-6" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Verified CS Student
+        </p>
+        <p class="artist-stats">Second-year Computer Science at UBC, Vancouver</p>
+      </div>
+    </header>
+
+    <div class="content">
+
+      <div class="action-row">
+        <button class="play-big" id="playBig" aria-label="Play HEAVEN by JENNIE">
+          <svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
+          <svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z" fill="currentColor"/></svg>
+        </button>
+        <img class="action-cover" src="https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02236bc23de8631dcf60b68d2a" alt="HEAVEN by JENNIE" title="HEAVEN by JENNIE">
+        <a class="follow-btn" href="https://github.com/isabelleezhan" target="_blank" rel="noopener">Follow</a>
+        <p class="tagline">a computer science student who thinks in systems and sees in color.</p>
+      </div>
+
+      <section class="block" id="work">
+        <h2 class="block-title">Popular</h2>
+        <ol class="tracklist">
+
+          <li class="track" id="track-nebula" data-id="nebula" data-title="Nebula" data-art="media/nebula.jpg">
+            <button class="track-row" aria-expanded="false">
+              <span class="track-num"><span class="n">1</span></span>
+              <img class="track-art" src="media/nebula.jpg" alt="">
+              <span class="track-meta">
+                <span class="track-title">Nebula</span>
+                <span class="track-sub">study time, turned into a tiny universe.</span>
+              </span>
+              <span class="track-stack">Java, Spring Boot, React</span>
+              <span class="track-len">Full stack</span>
+            </button>
+            <div class="track-detail">
+              <img src="media/nebula.jpg" alt="Nebula app showing pixel-art planets">
+              <div>
+                <p>Nebula is a gamified focus app that turns hours of studying into evolving pixel-art planets. Every subject gets its own star, and as focus sessions add up, that subject's planet grows through visual stages until it settles into a permanent star system. Full stack, with live focus tracking, session history, and weekly insight dashboards.</p>
+                <ul class="tags"><li>Java</li><li>Spring Boot</li><li>PostgreSQL</li><li>React</li><li>Three.js</li></ul>
+                <a class="pill-link" href="https://github.com/isabelleezhan/nebula" target="_blank" rel="noopener">View project</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="track" id="track-vibesplit" data-id="vibesplit" data-title="VibeSplit" data-art="media/vibesplit.jpg">
+            <button class="track-row" aria-expanded="false">
+              <span class="track-num"><span class="n">2</span></span>
+              <img class="track-art" src="media/vibesplit.jpg" alt="">
+              <span class="track-meta">
+                <span class="track-title">VibeSplit <span class="badge">In progress</span></span>
+                <span class="track-sub">your playlist, sorted by vibe, not chronology.</span>
+              </span>
+              <span class="track-stack">React, TypeScript, FastAPI</span>
+              <span class="track-len">Full stack</span>
+            </button>
+            <div class="track-detail">
+              <img src="media/vibesplit.jpg" alt="VibeSplit interface splitting a playlist into clusters">
+              <div>
+                <p>VibeSplit connects to Spotify, takes one big sprawling playlist, and splits it into smaller playlists that actually feel coherent, using clustering plus an LLM to name each group. I designed the full frontend flow myself, from login through clustering to an interactive preview where you can drag tracks between clusters by hand.</p>
+                <ul class="tags"><li>React</li><li>TypeScript</li><li>FastAPI</li><li>PostgreSQL</li><li>Spotify API</li></ul>
+                <a class="pill-link" href="https://github.com/isabelleezhan/vibesplit" target="_blank" rel="noopener">View project</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="track" id="track-hnsw" data-id="hnsw" data-title="HNSW ANN Index" data-art="media/hnsw.svg">
+            <button class="track-row" aria-expanded="false">
+              <span class="track-num"><span class="n">3</span></span>
+              <img class="track-art" src="media/hnsw.svg" alt="">
+              <span class="track-meta">
+                <span class="track-title">HNSW ANN Index</span>
+                <span class="track-sub">a nearest-neighbor search, built from scratch.</span>
+              </span>
+              <span class="track-stack">C++17, Python, pybind11</span>
+              <span class="track-len">94.3% recall</span>
+            </button>
+            <div class="track-detail">
+              <img src="media/hnsw.svg" alt="Diagram of HNSW's layered graph structure, from a dense bottom layer up to a single entry point">
+              <div>
+                <p>A graph-based approximate nearest-neighbor index written from the ground up in C++, hitting 94.3% recall at 100,000-vector scale against a brute-force baseline. It's exposed to Python through pybind11 and powers a movie recommendation engine across more than 9,000 titles.</p>
+                <ul class="tags"><li>C++17</li><li>Python</li><li>pybind11</li></ul>
+                <a class="pill-link" href="https://github.com/isabelleezhan/HNSW" target="_blank" rel="noopener">View project</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="track" id="track-medialibrary" data-id="medialibrary" data-title="MediaLibrary" data-art="media/medialib.jpg">
+            <button class="track-row" aria-expanded="false">
+              <span class="track-num"><span class="n">4</span></span>
+              <img class="track-art" src="media/medialib.jpg" alt="">
+              <span class="track-meta">
+                <span class="track-title">MediaLibrary</span>
+                <span class="track-sub">one place for every book, show, and movie I forget I started.</span>
+              </span>
+              <span class="track-stack">Java, Swing, JUnit</span>
+              <span class="track-len">Desktop</span>
+            </button>
+            <div class="track-detail">
+              <img src="media/medialib.jpg" alt="MediaLibrary desktop app">
+              <div>
+                <p>A desktop app for tracking books, movies, and TV shows in one library instead of a messy notes app. It handles status tracking, ratings and reviews, and simple stats on what you actually finish. Built with a 25-class UML architecture and full JUnit test coverage.</p>
+                <ul class="tags"><li>Java</li><li>Swing</li><li>JUnit</li></ul>
+                <a class="pill-link" href="https://github.com/isabelleezhan/medialibrary" target="_blank" rel="noopener">View project</a>
+              </div>
+            </div>
+          </li>
+
+        </ol>
+      </section>
+
+
+      <div class="pick-row">
+        <section class="block" id="listening">
+          <h2 class="block-title">Currently listening</h2>
+          <a class="liked" href="https://open.spotify.com/playlist/6uW5mMjsX65bBjS5sQaJWZ" target="_blank" rel="noopener">
+            <span class="liked-art">
+              <img src="https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da848d1ac8028583ac21d631146f" alt="">
+              <svg class="liked-heart" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.3-9.2C1.4 8.4 3.6 5 7 5c2 0 3.6 1.1 5 3 1.4-1.9 3-3 5-3 3.4 0 5.6 3.4 4.3 6.8C19.5 16.4 12 21 12 21z" fill="currentColor"/></svg>
+            </span>
+            <span class="liked-meta">
+              <strong>3 am</strong>
+              <small>Playlist by isabelle</small>
+            </span>
+          </a>
+        </section>
+
+        <section class="block">
+          <h2 class="block-title">Artist pick</h2>
+          <button class="pick" id="pickCard" aria-label="Play HEAVEN by JENNIE">
+            <span class="pick-art">
+              <img src="https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02236bc23de8631dcf60b68d2a" alt="">
+              <span class="pick-play" aria-hidden="true">
+                <svg class="icon-play" viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
+                <svg class="icon-pause" viewBox="0 0 24 24"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z" fill="currentColor"/></svg>
+              </span>
+            </span>
+            <span class="pick-meta">
+              <span class="pick-posted"><img src="media/avatar.jpg" alt="">Posted by Isabelle Zhan</span>
+              <strong>HEAVEN</strong>
+              <small>JENNIE</small>
+            </span>
+          </button>
+        </section>
+      </div>
+
+      <!-- Hidden Spotify player that the play buttons control -->
+      <div class="song-embed" aria-hidden="true"><div id="songEmbed"></div></div>
+
+      <section class="block" id="about">
+        <h2 class="block-title">About</h2>
+        <button class="about-card" id="aboutCard" aria-haspopup="dialog">
+          <img src="media/shanghai-me.jpg" alt="Isabelle Zhan on the Bund in Shanghai">
+          <span class="about-overlay">
+            <strong class="about-stat">4 projects, 1 in progress</strong>
+            <span class="about-snippet">Second-year CS at UBC. Analytical by training, visual by instinct. I like building the kind of software that has an actual point of view. Most of what I build starts as an excuse to tinker with something I'm already into.</span>
+          </span>
+        </button>
+
+        <dialog class="about-modal" id="aboutModal" aria-labelledby="aboutModalTitle">
+          <button class="modal-close" id="aboutClose" aria-label="Close">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+          </button>
+          <img src="media/shanghai-me.jpg" alt="">
+          <div class="modal-body">
+            <h3 id="aboutModalTitle">Isabelle Zhan</h3>
+            <p class="about-stat">4 projects, 1 in progress</p>
+            <p class="about-lead">Second-year CS at UBC. Analytical by training, visual by instinct. I like building the kind of software that has an actual point of view.</p>
+            <p>I'm a second-year computer science student at UBC, and most of what I build starts as an excuse to tinker with something I'm already into. Nebula turns studying into something closer to a game because that's what actually gets me to focus. VibeSplit happened because my playlists became needlessly overgrown. HNSW's recommendation engine and MediaLibrary both stem from the avid cinephile in me.</p>
+            <p>I grew up in Vancouver, and in my free time, I'm often learning new dances (often those KPop ones) or chasing what's new: new songs before anyone else has heard them, whatever just opened at the theater, especially sci-fi. I draw sometimes too, usually when I'm supposed to be doing something else.</p>
+          </div>
+        </dialog>
+      </section>
+
+      <footer class="site-footer" id="contact">
+        <h2 class="block-title">Say hi</h2>
+        <div class="footer-links">
+          <a class="pill-link" href="mailto:isabellehzhan@gmail.com">Email</a>
+          <a class="pill-link" href="https://linkedin.com/in/isabelle-z-aa91a83a6" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="pill-link" href="https://github.com/isabelleezhan" target="_blank" rel="noopener">GitHub</a>
+          <!-- <a class="pill-link" href="resume.pdf" target="_blank">Resume</a> -->
+        </div>
+      </footer>
+
+    </div>
+  </main>
+
+  <!-- Now playing bar -->
+  <div class="player" id="player">
+    <div class="player-now">
+      <img src="https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02236bc23de8631dcf60b68d2a" alt="">
+      <span>
+        <strong>HEAVEN</strong>
+        <small>JENNIE</small>
+      </span>
+    </div>
+    <div class="player-center">
+      <div class="player-controls">
+        <button id="restartBtn" aria-label="Restart song"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h2v14H6zM19 5v14L9 12z" fill="currentColor"/></svg></button>
+        <button id="playSmall" class="play-small" aria-label="Play">
+          <svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
+          <svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z" fill="currentColor"/></svg>
+        </button>
+      </div>
+      <div class="progress-row">
+        <span class="time" id="timeNow">0:00</span>
+        <div class="progress" aria-hidden="true"><span class="progress-fill" id="progressFill"></span></div>
+        <span class="time" id="timeTotal">0:00</span>
+      </div>
+    </div>
+    <div class="player-links">
+      <a href="mailto:isabellehzhan@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3z M3 6l9 7 9-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></a>
+      <a href="https://linkedin.com/in/isabelle-z-aa91a83a6" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h3.5v11H4zM5.75 3.5a2 2 0 110 4 2 2 0 010-4zM10 9h3.3v1.6c.5-.9 1.7-1.9 3.5-1.9 3.6 0 4.2 2.3 4.2 5.4V20h-3.5v-5.2c0-1.3 0-2.9-1.8-2.9s-2.1 1.4-2.1 2.8V20H10z" fill="currentColor"/></svg></a>
+      <a href="https://github.com/isabelleezhan" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 00-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 2.9.8.1-.6.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.7 1a9.4 9.4 0 015 0c1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0012 2z" fill="currentColor"/></svg></a>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+<script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
+</body>
+</html>

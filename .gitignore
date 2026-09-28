@@ -1,0 +1,7 @@
+# macOS
+.DS_Store
+
+# Local-only folders, not part of the website
+_archive/
+_originals/
+.claude/
